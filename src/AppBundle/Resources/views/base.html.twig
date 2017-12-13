@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+    {#<script async="" src="{{ asset('js/analytics.js') }}"></script>#}
+    <script type="text/javascript" async="" src="{{ asset('js/watch.js') }}">
+    </script><script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+    <script type="text/javascript">
+        /*<![CDATA[*/
+//        ;(function($){var ieVer=navigator.userAgent.match(/MSIE (\d+\.\d+);/);ieVer=ieVer&&ieVer[1]?new Number(ieVer):null;var cont=ieVer&&ieVer<7.1?document.createElement("div"):null,excludePattern=null,includePattern=null,mergeIfXhr=0,resMap2Request=function(url){if (!url.match(/\?/))url += "?";return url + "&nlsc_map=" + $.nlsc.smap();};;if(!$.nlsc)$.nlsc={resMap:{}};$.nlsc.normUrl=function(url){if(!url)return null;if(cont){cont.innerHTML='<a href="'+url+'"></a>';url=cont.firstChild.href}if(excludePattern&& url.match(excludePattern))return null;if(includePattern&&!url.match(includePattern))return null;return url.replace(/\?*&*(_=\d+)?&*$/g,"")};$.nlsc.h=function(s){var h=0,i;for(i=0;i<s.length;i++)h=(h<<5)-h+s.charCodeAt(i)&1073741823;return""+h};$.nlsc.fetchMap=function(){for(var url,i=0,res=$(document).find("script[src]");i<res.length;i++)if(url=this.normUrl(res[i].src?res[i].src:res[i].href))this.resMap[url]={h:$.nlsc.h(url),d:1}};$.nlsc.smap=function(){var s="[";for(var url in this.resMap)s+='"'+this.resMap[url].h+ '",';return s.replace(/,$/,"")+"]"};var c={global:true,beforeSend:function(xhr,opt){if(!$.nlsc.fetched){$.nlsc.fetched=1;$.nlsc.fetchMap()}if(opt.dataType!="script"){if(mergeIfXhr)opt.url=resMap2Request(opt.url);return true}var url=$.nlsc.normUrl(opt.url);if(!url)return true;if(opt.converters&&opt.converters["text script"]){var saveConv=opt.converters["text script"];opt.converters["text script"]=function(){if(!$.nlsc.resMap[url].d){$.nlsc.resMap[url].d=1;saveConv.apply(window,arguments)}}}var r=$.nlsc.resMap[url]; if(r){if(r.d)return false}else $.nlsc.resMap[url]={h:$.nlsc.h(url),d:0};return true}};if(ieVer)c.dataFilter=function(data,type){if(type&&(type!="html"&&type!="text"))return data;return data.replace(/(<script[^>]+)defer(=[^\s>]*)?/ig,"$1")};$.ajaxSetup(c)})(jQuery);
+        /*]]>*/
+    </script>
+    <title>{% block title %}Download popular mp3 music for free without registration{% endblock %}</title>
+    <meta property="og:title" content="Download popular mp3 music for free without registration">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://zf.fm/themes/classic/assets/images/logo_op.png">
+    <link rel="image_src" href="https://zf.fm/themes/classic/assets/images/logo_op.png">
+    <link rel="dns-prefetch" href="https://vk.com/">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com/">
+    <link rel="dns-prefetch" href="https://mc.yandex.ru/">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com/">
+    <link rel="dns-prefetch" href="https://counter.yadro.ru/">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://zf.fm/userdata/icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://zf.fm/userdata/icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://zf.fm/userdata/icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://zf.fm/userdata/icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://zf.fm/userdata/icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://zf.fm/userdata/icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://zf.fm/userdata/icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://zf.fm/userdata/icon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://zf.fm/userdata/icon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="https://zf.fm/userdata/icon/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="/userdata/icon/smalltile.png">
+    <meta name="msapplication-square150x150logo" content="/userdata/icon/mediumtile.png">
+    <meta name="msapplication-wide310x150logo" content="/userdata/icon/widetile.png">
+    <meta name="msapplication-square310x310logo" content="/userdata/icon/largetile.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="On the site you can listen online or download the most popular mp3 songs for free and without registration">
+    <meta property="og:description" content="On the site you can listen online or download the most popular mp3 songs for free and without registration">
+    <meta name="keywords" content="Mp3, download, free, songs, music, without registration, news, music, search, listen, online, hits, mp3, free, song, new">
+    <link rel="image_src" href="https://zf.fm/themes/classic/assets/images/logo_op.png">
+    <link rel="icon" href="https://zf.fm/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://zf.fm/favicon.png" type="image/x-icon">
+    <style type="text/css">.edit-letter-spacing{padding-right:20px;}.edit-letter-spacing a{display:inline-block;padding-left:8px;font-size:11px;font-weight:700;}.edit-letter-spacing a:hover{text-decoration:none;}.title2.top50{margin-top:40px;}</style>
+    <!--[if lt IE 9]><script src="/themes/classic/assets/js/html5shiv.js"></script><![endif]-->
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.zf.fm/?sort=week">
+    <meta name="yandex-verification" content="5ecae081799efb87">
+</head>
+<body>
+<div id="licounter" style="position:absolute;top:-100px;left:-100px"><div style="position:absolute;top:-100px;left:-100px"><img src="{{ asset('picture/hit.gif') }}" alt="" title="LiveInternet" width="1" height="1" border="0"></div><div style="position:absolute;top:-100px;left:-100px"><img src="/hit_002.gif" alt="" title="LiveInternet" width="1" height="1" border="0"></div><div style="position:absolute;top:-100px;left:-100px"><img src="/hit_003.gif" alt="" title="LiveInternet" width="1" height="1" border="0"></div><div style="position:absolute;top:-100px;left:-100px"><img src="/hit_004.gif" alt="" title="LiveInternet" width="1" height="1" border="0"></div></div>
+<div class="allwrapper">
+    <div class="wrapper">
+        <div id="header-fix">
+            <header id="header" class="">
+                <div class="main-grid clearfix">
+                    <div class="mg-l">
+                        <a href="{{ path('main') }}" title="zf.fm - музыка" data-pjax="true" class="logo">
+                            <img src="{{ asset('picture/logo2x.png') }}" alt="">
+                        </a>
+                    </div>
+
+                    <div class="mg-c">
+                        <form id="form-search" method="get" action="/mp3/search">
+                            <div class="search"><div class="search_borders">
+                                    <div class="inp-wrap">
+                                        <input id="topkeywords" placeholder="" name="keywords" class="text" type="text">
+                                        <span class="clear"></span>
+                                    </div>
+                                    <input class="btn2" name="yt0" value="Найти" id="yt0" type="submit"> </div>
+                            </div>
+                        </form>
+                        <div id="search_advice_wrapper" style="display:none;"></div>
+                        <script type="text/javascript"> $("body").click(function(){ $("#search_advice_wrapper").hide(); });</script>
+                    </div>
+                    <div id="top_error_notify" style="display: none;">
+                        <i class="notify_icon error"></i>
+                        <div class="notify_content"></div>
+                        <span id="close_alert_notify"></span>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="content">
+            <div class="main-grid clearfix">
+
+                {#{% include("@App/left-panel.html.twig") %}#}
+
+                {#{% include("@App/right-panel.html.twig") %}#}
+
+                <div class="mg-c">
+                    <div class="site-description">Следите за рейтингом самых популярных
+                        песен за неделю вместе с нашим музыкальным сервисом zf.fm. Обновления
+                        музыки каждый день! Добавляйте свежие новинки в свой плейлист или
+                        скачивайте в мп3 бесплатно.</div>
+
+                    {#{% include("@App/sosial.html.twig") %}#}
+
+                    {% block body %}{% endblock %}
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom-fix">
+        <div id="payer-fix">
+            <div id="player" class="fixed">
+                <div class="player-grid">
+                    <div class="pg-l">
+                        <div class="player-nav">
+                            <a class="player-nav-prev"></a>
+                            <a class="player-nav-next"></a>
+                            <a class="player-nav-play"></a>
+                        </div>
+                    </div>
+                    <div class="pg-r">
+                        <div class="player-panel">
+                            <a class="player-volume-button"></a>
+                            <div class="player-volume-slider">
+                                <div class="player-volume-total"></div>
+                                <div class="player-volume-current" id="player-volume-current" style="width: 100px;"></div>
+                                <span class="player-volume-handle" data-tool="tooltip" data-original-title="100%" id="player-volume-handle" style="left: 100px;"></span>
+                            </div>
+                            <ul class="player-menu">
+                                <li>
+                                    <span class="player-menu-reload btn5 reload2" data-tool="tooltip" data-original-title="Повторять"><span></span></span>
+                                </li>
+                                <li>
+                                    <span class="player-menu-playlists btn5 playlists2" data-tool="tooltip" data-original-title="Плейлисты"><span></span></span>
+                                </li>
+                                <li>
+                                    <span class="player-menu-download btn5 left_song_mess download2" data-tool="tooltip" data-original-title="Скачать"><span></span></span>
+                                </li>
+                                <li>
+                                    <span class="player-menu-plus btn5 plus2 left_song_mess" data-tool="tooltip-left" data-original-title="B плейлист"><span></span></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pg-c">
+                        <div class="player-time-rail">
+                            <div id="face"></div>
+                            <div class="player-time-total" style="display: none;">
+                                <span class="player-time-loaded"></span>
+                                <span class="player-time-current"></span>
+                                <span class="player-time-start"></span>
+                                <span class="player-time-end"></span>
+                                <span class="player-song-name"></span>
+                                <span class="player-corner-left"></span>
+                                <span class="player-corner-right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="main-grid">
+                <div class="footer-content clearfix">
+                    <div class="right-clmn">
+                        <div class="report-bug-link-wrap">
+                            <a href="{{ path('main') }}" class="report-bug-link">
+                                <img src="{{ asset('picture/report-bug.png') }}" alt="Сообщить об ошибке">
+                            </a>
+                        </div>
+                        <div class="footer-banners">
+                        </div>
+                    </div>
+                    <div class="center-clmn">
+                        <div class="footer-text">
+                            <img src="{{ asset('picture/copy-zv.gif') }}">
+                            <div class="clmn">
+                                <div class="title3">
+                                    <span>
+                                    <h3>
+                                        <a title="zf.fm - музыка" href="{{ path('main') }}">Скачать MP3 бесплатно</a>
+                                    </h3>
+                                    </span>
+                                </div>
+                                Наш музыкальный сервис zf.fm позволяет слушать онлайн или скачать любую мп3 музыку
+                                бесплатно и без регистрации. Мы размещаем композиции как зарубежных, так и отечественных
+                                исполнителей. Вы можете сами добавлять свои любимые песни или создавать собственные
+                                плейлисты из уже загруженных композиций. Мы постоянно обновляем рейтинг самых популярных
+                                песен за день, неделю или месяц. Любите слушать радио? Прямо на нашем сайте вы можете
+                                выбрать любую из 130 радиостанций.
+                            </div>
+                            <div class="clmn">
+                                <div class="title3">
+                                    <span>
+                                    <h3>
+                                    <a title="Новинки mp3" href="{{ path('main') }}">Новинки музыки</a>
+                                    </h3>
+                                    </span>
+                                </div>
+                                Самые свежие новинки музыки в формате mp3 появляются на нашем сайте ежедневно. Вы
+                                можете постоянно добавлять в свои плейлисты новые композиции или скачивать их в
+                                свой плеер или мобильный еще до того, как они станут хитами. Следите за нашим рейтингом
+                                новинок за неделю, чтобы знать самые модные песни 2017 года.
+                            </div>
+                            <div class="clmn">
+                                <div class="title3">
+                                    <span>
+                                    <h3>
+                                    <span onclick="$('#topkeywords').focus(); return false;">Поиск по сайту</span>
+                                    </h3>
+                                    </span>
+                                </div>
+                                Понравилась песня, но никак не можете ее найти? Наш музыкальный сервис zf.fm позволяет
+                                искать песни по названию или имени исполнителя. Вы также можете выбрать исполнителя и
+                                просмотреть все его композиции.
+                                Это поможет вам добавлять в свои плейлисты любую
+                                интересующую вас музыку. Если вы не нашли свои любимые песни на нашем сервисе, но
+                                хотели бы поделиться ей с другими пользователями, добавляйте ее на наш сайт!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sep"></div>
+                <div class="footer-bottom" style="text-align: center;">
+                    <div class="femail">
+                        По всем вопросам писать: <a href="mailto:support@zf.fm">support@zf.fm</a>
+                    </div>
+                    <div class="madein">
+                        <a href="https://zf.fm/disclaimer">Пожаловаться на нарушение авторских прав / DMCA complain</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<div class="overlay"></div>
+<script type="text/javascript" src="{{ asset('js/out.js') }}"></script>
+<script type="text/javascript">
+    var isGuest = '1';
+    var playlist_id = '';
+    var loping = false;
+
+
+    window.SM2_DEFER = true;
+    soundManager.useHTML5Audio = true;
+    soundManager.flashVersion = 9;
+    soundManager.multiShot = false;
+    soundManager.useFastPolling = false;
+    soundManager.preferFlash = false;
+    soundManager.debugMode = false;
+    soundManager.useHighPerformance  = true;
+    soundManager.html5PollingInterval  = 30;
+    soundManager.waitForWindowLoad   = true;
+    soundManager.debugFlash = false;
+    soundManager.useFlashBlock =  false;
+
+    soundManager.url = '/themes/classic/assets/swf/';
+
+    $(document).ready(function(){ $('#player').zvPlayer();
+        soundManager.beginDelayedInit(); $("img.lazy").lazyload();});
+
+    if(!navigator.userAgent.match(/((iPod|iPhone|iPad).+\bOS\s+[1-4]|WebApps\/.+CFNetwork)/))
+    {
+        $(document).pjax('a[data-pjax]', '#container');
+        $(document).bind('pjax:end',function (xhr, options) {
+            ga('send', { 'hitType': 'pageview', 'page': document.URL,
+                'title': document.title });
+
+            $(".tooltip").remove();
+//            $("#licounter").append("<div" + style='position:absolute;top:-100px;left:-100px'><img
+//            src='//counter.yadro.ru/hit?t38.6;r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random()+"'
+//            alt='' title='LiveInternet' "+"border='0' width='1' height='1'
+//                /></div>");$("#counterUP");
+//            $("img.lazy").lazyload();}).bind('pjax:start', function ()
+//        {window.scrollTo(0,
+//            0);$(window).trigger('banner_reload');$(".tooltip").remove();$("#container").html('<div
+//        class="progress-box"><img
+//            src="/themes/classic/assets/images/progress.gif"></div>');$(".bannersIframe").attr("src",
+//            function ( i, val ) { return val; });
+            });
+    }
+    $(function(){ if($("#topkeywords").val() == '')
+        $("#topkeywords").focus(); });
+    var is_brand = 0;
+</script>
+{#<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] ||#}
+        {#[]).push(function() { try { w.yaCounter29892264 = new Ya.Metrika({#}
+        {#id:29892264, clickmap:true, trackLinks:true, accurateTrackBounce:true,#}
+        {#trackHash:true }); } catch(e) { } }); var n =#}
+        {#d.getElementsByTagName("script")[0], s = d.createElement("script"), f =#}
+        {#function () { n.parentNode.insertBefore(s, n); }; s.type =#}
+        {#"text/javascript"; s.async = true; s.src =#}
+        {#"https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object#}
+        {#Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else {#}
+        {#f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/29892264" style="position:absolute; left:-9999px;" alt=""/></div></noscript>#}
+{#<script>#}
+    {#(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){#}
+        {#(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),#}
+        {#m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)#}
+    {#})(window,document,'script','//www.google-analytics.com/analytics.js','ga');#}
+
+    {#ga('create', 'UA-31759446-2', 'auto');#}
+    {#ga('send', 'pageview');#}
+
+
+
+{#</script>#}
+{#<script>#}
+
+    {#if($.cookie('notice') != '11') {#}
+        {#var Notification = window.Notification || window.mozNotification || window.webkitNotification;#}
+
+        {#Notification.requestPermission(function (permission) {#}
+            {#// console.log(permission);#}
+        {#});#}
+
+        {#function showN() {#}
+            {#var instance = new Notification(#}
+                {#"Скачай", {#}
+                    {#body: "Самые популярные новинки!",#}
+                    {#icon: "https://zf.fm/userdata/icon/apple-touch-icon-180x180.png"#}
+                {#}#}
+            {#);#}
+
+            {#instance.onclick = function () {#}
+                {#window.location = 'https://zf.fm/new?sort=date_views';#}
+            {#};#}
+
+            {#setTimeout(function () {#}
+                {#instance.close(); //closes the notification#}
+            {#}, 10000);#}
+
+            {#return false;#}
+        {#}#}
+
+        {#$(function () {#}
+            {#setTimeout(function () {#}
+                {#showN();#}
+            {#}, 5000);#}
+        {#});#}
+
+        {#$.cookie('notice',1+$.cookie('notice'),{ path: '/' });#}
+    {#}#}
+{#</script>#}
+{#<script type="text/javascript">#}
+
+
+    {#function getTopOffset(e) {#}
+        {#var y = 0;#}
+        {#do { y += e.offsetTop; } while (e = e.offsetParent);#}
+        {#return y;#}
+    {#}#}
+    {#var block = document.getElementById('cbntut');#}
+
+    {#if ( null != block ) {#}
+        {#var topPos = getTopOffset( block );#}
+
+        {#$(document).ready(function() {#}
+            {#$(window).scroll(function () {#}
+                {#var scrollHeight = Math.max( document.documentElement.scrollHeight, document.documentElement.clientHeight),#}
+
+                    {#// определяем высоту рекламного блока#}
+                    {#blockHeight = block.offsetHeight,#}
+
+                    {#// вычисляем высоту подвала, footer заменить на значение атрибута id подвала#}
+                    {#footerHeight = document.getElementById('footer').offsetHeight,#}
+
+                    {#// считаем позицию, до которой блок будет зафиксирован#}
+                    {#stopPos = scrollHeight - blockHeight - footerHeight;#}
+
+                {#var newcss = (topPos < window.pageYOffset) ?#}
+                    {#'top:60px; position: fixed;' : 'position:static;';#}
+
+                {#if ( window.pageYOffset > stopPos )#}
+                    {#newcss = 'position:static;';#}
+
+                {#block.setAttribute( 'style', newcss );#}
+            {#})#}
+        {#})#}
+    {#}#}
+{#</script>#}
+
+
+
+{#<script type="text/javascript">#}
+    {#/*<![CDATA[*/#}
+    {#document.write("<div#}
+    {#style='position:absolute;top:-100px;left:-100px'><img#}
+    {#src='//counter.yadro.ru/hit?t38.6;r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random()+"'#}
+    {#alt='' title='LiveInternet' "+"border='0' width='1' height='1'#}
+{#\/></div>")#}
+    {#jQuery(function($) {#}
+        {#$('body').on('click','#yt0',function(){jQuery.ajax({'type':'GET','cache':false,'beforeSend':function(xhr){#}
+            {#if($("#topkeywords").val().trim() == ""){ $("#topkeywords").focus();#}
+                {#return false; } $("title").text(); var val#}
+                {#=$("#topkeywords").val().trim(); val = val.replace("&", "%26");#}
+            {#History.replaceState({state:"search"}, "Поиск по слову «" +#}
+                {#$("#topkeywords").val().trim()+"»", "/mp3/search?keywords="+ val);#}
+            {#$("#topkeywords").blur(); $(".tooltip").remove(); window.scrollTo(0,0);#}
+            {#$("#search_advice_wrapper").hide(); $(window).trigger("banner_reload");#}
+            {#$("#container").html('<div class="progress-box"><img#}
+            {#src="/themes/classic/assets/images/progress.gif"#}
+            {#alt="Загрузка..."></div>'); return#}
+            {#xhr.setRequestHeader("X-PJAX","true");},'url':'/mp3/search','data':jQuery(this).parents("form").serialize(),'success':function(html){jQuery("#container").html(html)}});return#}
+            {#false;});#}
+    {#});#}
+    {#/*]]>*/#}
+{#</script><div style="position:absolute;top:-100px;left:-100px"><img src="/hit_005.gif" alt="" title="LiveInternet" width="1" height="1" border="0"></div>#}
+{#<script>/* <![CDATA[#}
+{#*/(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/*#}
+ {#]]> */</script>#}
+
+</body>
+</html>
